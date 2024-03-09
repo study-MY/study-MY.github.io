@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Pretendard", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #2e3034;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+body {
+  background: linear-gradient(to top, #f2f5f7, #ffffff);
+}
+
+.project .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.project .container .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  box-shadow: 0 0 32px 0 rgba(137, 189, 214, 0.1);
+}
+
+.iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #89bdd6;
+  border-radius: 56px;
+  transform: translateX(-50%);
+}
+.switch button {
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #89bdd6;
+  border-radius: 36px;
+  color: #89bdd6;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.switch button.active {
+  padding: 10px 20px;
+  background: #89bdd6;
+  border-radius: 36px;
+  color: #ffffff;
+  font-size: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Project Infomation */
+.project-info {
+  max-width: 500px;
+}
+.project-info .tit {
+  font-size: 64px;
+  font-weight: 700;
+}
+.project-info .description span {
+  font-weight: 700;
+}
+.project-info .link {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* fp-nav right style */
+#fp-nav ul li .fp-right {
+  color: #2e3034;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family: "LeeSeoyun";
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: #fee970;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  transition: all 0.1s ease-in-out;
+}/*# sourceMappingURL=comm.css.map */

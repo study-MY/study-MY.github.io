@@ -1,0 +1,161 @@
+$w: #ffffff;
+$b: #2e3034;
+$txtColor: #2e3034;
+$primary: #89bdd6;
+$pointColor: #fee970;
+
+$baseFontSize: 16px;
+
+@mixin dropShadow {
+    box-shadow: 0 0 32px 0 rgba(137, 189, 214, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Pretendard", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: $txtColor;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+body {
+    background: linear-gradient(to top, #f2f5f7, #ffffff);
+}
+
+.project .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    // max-width: 1920px; // 임시로 여기 작성. container 조정 필요
+    padding: 40px;
+
+    .content {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+
+        @include dropShadow;
+    }
+}
+
+.iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+}
+
+// device toggle
+$switchPH: 10px;
+$btnToggleH: 10px;
+$btnToggleFontSize: 16px;
+
+.switch {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+
+    padding: 10px;
+
+    background-color: $w;
+    border: 1px solid $primary;
+    border-radius: calc($btnToggleFontSize + $switchPH * 2 + $btnToggleH * 2);
+
+    transform: translateX(-50%);
+
+    button {
+        padding: 10px 20px;
+        background: $w;
+        border: 1px solid $primary;
+        border-radius: calc($btnToggleFontSize + $btnToggleH * 2);
+        color: $primary;
+        font-size: $btnToggleFontSize;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    button.active {
+        padding: 10px 20px;
+        background: $primary;
+        border-radius: calc($btnToggleFontSize + $btnToggleH * 2);
+        color: $w;
+        font-size: $w;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+/* Project Infomation */
+.project-info {
+    max-width: 500px;
+
+    .tit {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    .description {
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .link {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+/* fp-nav right style */
+#fp-nav ul li .fp-right {
+    color: $b;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: "LeeSeoyun";
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: $pointColor;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
