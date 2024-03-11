@@ -39,6 +39,10 @@ body {
     background: linear-gradient(to top, #f2f5f7, #ffffff);
 }
 
+.wrap {
+    max-width: 1920px;
+}
+
 .project .container {
     display: flex;
     flex-direction: row;
@@ -46,7 +50,6 @@ body {
 
     width: 100%;
     height: 100%;
-    // max-width: 1920px; // 임시로 여기 작성. container 조정 필요
     padding: 40px;
 
     .content {
@@ -107,6 +110,7 @@ $btnToggleFontSize: 16px;
         border-radius: calc($btnToggleFontSize + $btnToggleH * 2);
         color: $w;
         font-size: $w;
+
         font-weight: 700;
         cursor: pointer;
     }
@@ -114,6 +118,7 @@ $btnToggleFontSize: 16px;
 
 /* Project Infomation */
 .project-info {
+    margin-left: 40px;
     max-width: 500px;
 
     .tit {

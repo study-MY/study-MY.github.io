@@ -25,6 +25,10 @@ body {
   background: linear-gradient(to top, #f2f5f7, #ffffff);
 }
 
+.wrap {
+  max-width: 1920px;
+}
+
 .project .container {
   display: flex;
   flex-direction: row;
@@ -83,6 +87,7 @@ body {
 
 /* Project Infomation */
 .project-info {
+  margin-left: 40px;
   max-width: 500px;
 }
 .project-info .tit {
