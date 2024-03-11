@@ -29,6 +29,38 @@ body {
   max-width: 1920px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  height: 100%;
+}
+
+/* Intro */
+.intro {
+  font-weight: 700;
+}
+.intro span {
+  font-size: 3vw;
+}
+.intro .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30%;
+  background-color: #fee970;
+}
+.intro .row span {
+  display: inline-block;
+  color: #ffffff;
+  text-shadow: -1px 0 #89bdd6, 0 1px #89bdd6, 1px 0 #89bdd6, 0 -1px #89bdd6;
+}
+.intro .row-3 div {
+  text-transform: uppercase;
+}
+
+/* Project Layout */
 .project .container {
   display: flex;
   flex-direction: row;

@@ -43,6 +43,49 @@ body {
     max-width: 1920px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    height: 100%;
+
+}
+
+/* Intro */
+.intro {
+    font-weight: 700;
+
+    span {
+        font-size: 3vw;
+    }
+
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 30%;
+        background-color: $pointColor;
+
+        span {
+            display: inline-block;
+            color: $w;
+            // -webkit-text-stroke: 1px $primary;
+            text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary;
+            // text-shadow: 0 0 1px $primary;
+            // border: 1px solid $primary;
+        }
+    }
+
+    .row-3 {
+        div {
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* Project Layout */
 .project .container {
     display: flex;
     flex-direction: row;
