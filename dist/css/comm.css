@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +28,7 @@ body {
 }
 
 .wrap {
+  margin: 0 auto;
   max-width: 1920px;
 }
 
@@ -37,37 +40,82 @@ body {
   height: 100%;
 }
 
-/* Intro */
+/* Section 1 : Intro */
 .intro {
+  position: relative;
   font-weight: 700;
 }
+.intro .flip-v {
+  display: inline-block;
+  transform: scaleY(-1);
+}
 .intro span {
-  font-size: 3vw;
+  font-size: calc(240px + 4vw);
+  line-height: 1;
+  text-align: center;
 }
 .intro .row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 30%;
-  background-color: #fee970;
+  position: absolute;
+}
+.intro .row .black {
+  color: #2e3034;
+  text-shadow: none;
 }
 .intro .row span {
   display: inline-block;
   color: #ffffff;
   text-shadow: -1px 0 #89bdd6, 0 1px #89bdd6, 1px 0 #89bdd6, 0 -1px #89bdd6;
 }
+.intro .row-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.intro .row-2 {
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.intro .row-3 {
+  top: 66%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .intro .row-3 div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #2e3034;
   text-transform: uppercase;
 }
+.intro .row-3 div span {
+  line-height: 1.2;
+}
+.intro .row-3 div span:first-child {
+  font-size: calc(24px + 2vw);
+}
+.intro .row-3 div span:nth-child(2) {
+  font-size: calc(24px + 0.6vw);
+}
+.intro .row-3 div span:last-child {
+  font-size: calc(24px + 3vw);
+}
+.intro .row-3 div span .black {
+  color: #2e3034;
+  text-shadow: none;
+}
 
-/* Project Layout */
+/* Section : Project Layout */
 .project .container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 40px;
 }
 .project .container .content {
   position: relative;

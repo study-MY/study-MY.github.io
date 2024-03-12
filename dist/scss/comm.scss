@@ -10,6 +10,8 @@ $baseFontSize: 16px;
     box-shadow: 0 0 32px 0 rgba(137, 189, 214, 0.1);
 }
 
+/* 전체 레이아웃 */
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +42,7 @@ body {
 }
 
 .wrap {
+    margin: 0 auto;
     max-width: 1920px;
 }
 
@@ -49,15 +52,23 @@ body {
     justify-content: space-between;
     padding: 40px;
     height: 100%;
-
 }
 
-/* Intro */
+/* Section 1 : Intro */
 .intro {
+    position: relative;
     font-weight: 700;
 
+    .flip-v {
+        display: inline-block;
+        transform: scaleY(-1)
+    }
+
     span {
-        font-size: 3vw;
+        // font-size: 320px;
+        font-size: calc(240px + 4vw);
+        line-height: 1;
+        text-align: center;
     }
 
 
@@ -65,35 +76,81 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 30%;
-        background-color: $pointColor;
+        position: absolute;
+        // height: 30%;
+
+        .black {
+            color: $b;
+            text-shadow: none;
+        }
 
         span {
             display: inline-block;
             color: $w;
             // -webkit-text-stroke: 1px $primary;
             text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary;
-            // text-shadow: 0 0 1px $primary;
-            // border: 1px solid $primary;
         }
     }
 
+    .row-1 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .row-2 {
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .row-3 {
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
+
         div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            color: $b;
             text-transform: uppercase;
+
+
+
+            span {
+                line-height: 1.2;
+
+                &:first-child {
+                    font-size: calc(24px + 2vw);
+                }
+
+                &:nth-child(2) {
+                    font-size: calc(24px + 0.6vw);
+                }
+
+                &:last-child {
+                    font-size: calc(24px + 3vw);
+                }
+
+                .black {
+                    color: $b;
+                    text-shadow: none;
+                }
+            }
         }
     }
 }
 
-/* Project Layout */
+/* Section : Project Layout */
 .project .container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 
     width: 100%;
     height: 100%;
-    padding: 40px;
 
     .content {
         position: relative;
