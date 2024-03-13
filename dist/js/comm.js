@@ -19,4 +19,6 @@ $(function () {
       "Contact",
     ],
   });
+
+  console.log(Date());
 });
