@@ -57,7 +57,7 @@ body {
   transform: scaleY(-1);
 }
 .intro span {
-  font-size: 16vw;
+  font-size: 12vw;
   line-height: 1;
   text-align: center;
 }
