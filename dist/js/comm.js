@@ -21,4 +21,12 @@ $(function () {
   });
 
   console.log(Date());
+  var nowCST = new Date().toLocaleString("en-US", {
+    timeZone: "America/Chicago",
+  });
+  console.log("Current time in CST:", nowCST);
+
+  // GMT (그리니치 표준 시간)
+  var nowGMT = new Date().toLocaleString("en-US", { timeZone: "GMT" });
+  console.log("Current time in GMT:", nowGMT);
 });

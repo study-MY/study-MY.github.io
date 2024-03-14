@@ -51,6 +51,65 @@ body {
     background: linear-gradient(to top, #f2f5f7, #ffffff);
 }
 
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 6;
+
+.bubble {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    // background: radial-gradient(circle, rgba(242, 245, 247, 1), rgba(242, 245, 247, 0));
+    // background: rgba(0, 0, 0, 0.3);
+}
+
+.background>span {
+    width: $particleSize;
+    height: $particleSize;
+    border-radius: $particleSize;
+    backface-visibility: hidden;
+    position: absolute;
+    animation-name: move;
+    animation-duration: $animationDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    $colors: (
+        #ffffff,
+    );
+
+@for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+        background-image: url(./../../images/bg_bubble_test.png);
+        color: nth($colors, random(length($colors)));
+        top: random(100) * 1%;
+        left: random(100) * 1%;
+        animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+        animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+        // $blurRadius: (
+        //     random() + 0.5) * $particleSize * 0.5;
+        $x: if(random() > 0.5, -1, 1);
+        // box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+        box-shadow: ($particleSize * 2 * $x) 0 currentColor;
+    }
+}
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+// 구분선
 .wrap {
     margin: 0 auto;
     max-width: 1920px;
@@ -111,17 +170,24 @@ body {
         .i-dot {
             width: 100%;
             height: 0;
-            border-radius: 50%;
-            background-color: $pointColor;
+
+
 
             &::after {
+                content: '';
+                display: block;
                 width: 100%;
                 height: 100%;
+                border-radius: 50%;
+                padding-bottom: 100%;
+                background-color: $pointColor;
             }
         }
 
         .i-sq {
+            margin-top: calc(4.5vmin + 2vmin);
             width: 100%;
+            height: 100%;
             background-color: $b;
         }
     }
