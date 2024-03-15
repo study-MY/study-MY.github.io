@@ -335,6 +335,74 @@ $btnToggleFontSize: 16px;
     }
 }
 
+
+
+/*  */
+/*  */
+/*  */
+/* Section : Contact */
+.contact {
+    .container {
+        flex-direction: row;
+        font-weight: 700;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .col-l {
+            flex: 4;
+
+            .on {
+                p {
+                    font-size: 32px;
+                }
+            }
+
+            .clock {
+                .time-z {
+                    font-size: 24px;
+                }
+
+                .time {
+                    font-size: 56px;
+                }
+            }
+        }
+
+        .col-r {
+            flex: 8;
+
+            .thanks {
+                font-size: 64px;
+            }
+
+            .link {
+                display: flex;
+                flex-direction: row;
+                gap: 10vmin;
+
+                div {
+                    width: 200px;
+                    height: 200px;
+                    background-color: $b;
+                    border-radius: 50%;
+                }
+            }
+
+            .copyright {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+
+
 /* fp-nav right style */
 #fp-nav ul li .fp-right {
     color: $b;
