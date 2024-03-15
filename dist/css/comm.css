@@ -62,61 +62,61 @@ body {
 .background > span:nth-child(1) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 57%;
-  left: 49%;
-  animation-duration: 15s;
-  animation-delay: -6.9s;
-  transform-origin: -8vw -2vh;
-  box-shadow: -40vmin 0 currentColor;
+  top: 47%;
+  left: 83%;
+  animation-duration: 13.4s;
+  animation-delay: -5.1s;
+  transform-origin: -24vw 25vh;
+  box-shadow: 40vmin 0 currentColor;
 }
 .background > span:nth-child(2) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 62%;
-  left: 75%;
-  animation-duration: 11.5s;
-  animation-delay: -9.9s;
-  transform-origin: 17vw 19vh;
-  box-shadow: 40vmin 0 currentColor;
+  top: 19%;
+  left: 35%;
+  animation-duration: 10.2s;
+  animation-delay: -12.6s;
+  transform-origin: -10vw 16vh;
+  box-shadow: -40vmin 0 currentColor;
 }
 .background > span:nth-child(3) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 30%;
-  left: 76%;
-  animation-duration: 15.8s;
-  animation-delay: -0.1s;
-  transform-origin: -15vw 22vh;
+  top: 61%;
+  left: 14%;
+  animation-duration: 13.1s;
+  animation-delay: -12.9s;
+  transform-origin: 16vw -9vh;
   box-shadow: -40vmin 0 currentColor;
 }
 .background > span:nth-child(4) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 53%;
-  left: 58%;
-  animation-duration: 13.5s;
-  animation-delay: -10.5s;
-  transform-origin: 7vw -5vh;
-  box-shadow: -40vmin 0 currentColor;
+  top: 10%;
+  left: 93%;
+  animation-duration: 14.7s;
+  animation-delay: -6.5s;
+  transform-origin: 20vw 24vh;
+  box-shadow: 40vmin 0 currentColor;
 }
 .background > span:nth-child(5) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 56%;
-  left: 58%;
-  animation-duration: 12.7s;
-  animation-delay: -10.2s;
-  transform-origin: 0vw -7vh;
-  box-shadow: 40vmin 0 currentColor;
+  top: 42%;
+  left: 15%;
+  animation-duration: 12.8s;
+  animation-delay: -0.1s;
+  transform-origin: 1vw 9vh;
+  box-shadow: -40vmin 0 currentColor;
 }
 .background > span:nth-child(6) {
   background-image: url(./../../images/bg_bubble_test.png);
   color: #ffffff;
-  top: 46%;
-  left: 31%;
-  animation-duration: 10.4s;
-  animation-delay: -13.2s;
-  transform-origin: -13vw 8vh;
+  top: 75%;
+  left: 1%;
+  animation-duration: 11.5s;
+  animation-delay: -9.2s;
+  transform-origin: 12vw 15vh;
   box-shadow: -40vmin 0 currentColor;
 }
 
