@@ -196,3 +196,35 @@ hr {
 input[type="password"] {
     font-family: "Malgun Gothic";
 }
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+
+.blind,
+caption,
+legend {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* 테이블 초기화 */
+
+.clearfix {
+    display: block;
+    overflow: visible;
+    width: auto;
+    clear: both;
+    zoom: 1;
+
+    &:after {
+        display: block;
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+        clear: both;
+        content: "";
+    }
+}
