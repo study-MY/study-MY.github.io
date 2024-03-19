@@ -7,13 +7,7 @@
     font-style: normal;
 }
 
-$w: #ffffff;
-$b: #2e3034;
-$txtColor: #2e3034;
-$primary: #89bdd6;
-$pointColor: #fee970;
 
-$baseFontSize: 16px;
 
 @mixin dropShadow {
     box-shadow: 0 0 32px 0 rgba(137, 189, 214, 0.1);
@@ -21,7 +15,6 @@ $baseFontSize: 16px;
 
 
 /* 전체 레이아웃 */
-
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +30,7 @@ $baseFontSize: 16px;
     text-decoration: none;
     color: $txtColor;
 }
+
 
 .blind {
     overflow: hidden;
