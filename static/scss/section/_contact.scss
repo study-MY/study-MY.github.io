@@ -30,7 +30,7 @@
             }
 
             .ready {
-                color: #d9d9d9;
+                color: $disabledColor;
             }
         }
 
@@ -51,6 +51,14 @@
                     height: 200px;
                     // background-color: $b;
                     border-radius: 50%;
+
+                    &:nth-child(3):hover {
+                        background-color: $disabledColor;
+
+                        img {
+                            display: none;
+                        }
+                    }
                 }
             }
 

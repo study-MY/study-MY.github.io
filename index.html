@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="./static/css/style.css" />
     <script src="./static/js/comm.js"></script>
+    <script defer src="./static/js/clock.js"></script>
   </head>
 
   <body>
@@ -269,7 +270,7 @@
                 <div class="clock">
                   <div>
                     <p class="time-z">KST / JST</p>
-                    <p class="time">00:00:00</p>
+                    <p class="time" id="time"></p>
                   </div>
                   <div class="ready">
                     <p class="time-z">준비중</p>
@@ -285,7 +286,7 @@
                 <div class="thanks">감사합니다, 다시 뵐게요 :D</div>
                 <div class="link">
                   <div>
-                    <a href="#">
+                    <a href="mailto:null.for.ez@gmail.com">
                       <span class="blind">메일보내기</span>
                       <img
                         src="./static/images/link_mail.png"
@@ -294,16 +295,16 @@
                     </a>
                   </div>
                   <div>
-                    <a href="#">
-                      <span class="blind">메일보내기</span>
+                    <a href="https://github.com/study-MY" target="_blank">
+                      <span class="blind">깃헙을 새 창으로 열기</span>
                       <img
                         src="./static/images/link_github.png"
-                        alt="메일 보내기"
+                        alt="깃헙을 새 창으로 열기"
                       />
                     </a>
                   </div>
-                  <div>
-                    <a href="#">
+                  <div class="link-sns">
+                    <a href="javascript:alert('준비중입니다!')">
                       <span class="blind">SNS</span>
                       <img
                         src="./static/images/link_sns.png"
