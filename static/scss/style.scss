@@ -1,3 +1,5 @@
 @import 'variables';
 @import 'reset';
 @import 'comm';
+// comm : background, font setting and mixin도 이번에는 여기에 설정.
+@import './section/section';
